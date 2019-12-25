@@ -1,0 +1,22 @@
+<%- include('partials/header') %>
+<div class="container">
+        <h1 style="text-align: center;">Add Movies here!</h1>
+        <div style="margin: 25px auto; width: 30%">
+            <form action="/movies" method="POST">
+                <div class="form-group row">
+                    <input class="form-control" type="text" name="name" id="movie" placeholder="Name">
+                </div>
+                <div class="form-group row">
+                    <input class="form-control" type="text" name="url" id="url" placeholder="URL">
+                </div>
+                <div class="form-group row">
+                    <input class="form-control" type="text" name="desc" id="desc" placeholder="Description">
+                </div>
+                <div class="form-group row">
+                    <input class="btn btn-primary btn-lg btn-block"type="submit">
+                </div>  
+            </form>
+            <a href="/movies">Go Back</a>
+        </div>
+</div>
+<%- include('partials/footer') %>

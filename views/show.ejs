@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+<div class="container">
+    <h1 style= "margin: 25px auto"><%= movie.name %></h1>
+    <div class="col-md-3 col-sm-6">
+        <img style= "margin: 25px auto" class="img-thumbnail" src="<%= movie.image %>" alt="">
+    </div>
+    <p style= "margin: 25px auto" class="caption"><%= movie.description %></p>
+</div>
+<%- include('partials/footer') %>
